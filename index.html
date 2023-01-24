@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="tip-amount">
+      <div class="tip-amount__label">Tip Amount</div>
+      <div class="tip-amount__sum">$<span id="tip">2</span></div>
+    </div>
+    <div class="total-amount">
+      <div class="total-amount__label">Total per Person</div>
+      <div class="total-amount__sum">$<span id="sum-person">11</span></div>
+    </div>
+    <div class="inputs">
+      <div class="total-sum">
+        <input name="sum" id="sum" type="text" class="total-sum__input" value="20" maxlength="8">
+        <label class="total-sum__label" for="sum">Bill Amount</label>
+      </div>
+      <div class="number-person">
+        <input id="amount" name="sum" type="text" class="number-person__input" value="2" maxlength="2">
+        <label class="number-person__label" for="sum">Number of people</label>
+      </div>
+    </div>
+    <div class="radio-buttons" id="radio-buttons">
+      <div>
+        <input type="radio" value="5%" name="radio-button" id="five-percent">
+        <label for="five-percent" data-value="5%">5%</label>
+      </div>
+      <div>
+        <input type="radio" checked value="10%" name="radio-button" id="ten-percent">
+        <label for="ten-percent" data-value="10%">10%</label>
+      </div>
+      <div>
+        <input type="radio" value="15%" name="radio-button" id="fifteen-percent">
+        <label for="fifteen-percent" data-value="15%">15%</label>
+      </div>
+      <div>
+        <input type="radio" value="20%" name="radio-button" id="twenty-percent">
+        <label for="twenty-percent" data-value="20%">20%</label>
+      </div>
+    </div>
+    <div class="result">
+      <button id="button">Calculate</button>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
