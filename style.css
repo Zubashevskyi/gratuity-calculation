@@ -7,10 +7,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  width: 100vw;
   font-family: "Roboto", sans-serif;
   flex-direction: column;
+  overflow: auto;
 }
 
 .wrapper {
@@ -19,6 +18,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-top: 70px;
 }
 
 .tip-amount {
